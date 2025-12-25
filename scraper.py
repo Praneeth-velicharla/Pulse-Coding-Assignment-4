@@ -3,7 +3,7 @@ import json
 from datetime import datetime
 from dateutil.parser import parse
 
-SERP_API_KEY = "f2165c13ce4e5cd144e91de054969c6692b67179388ebeb7aa6f1e9cabc1bf2f"
+SERP_API_KEY = "YOUR_SERPAPI_KEY"
 
 def fetch_reviews(company, source, start_date, end_date):
     query_map = {
