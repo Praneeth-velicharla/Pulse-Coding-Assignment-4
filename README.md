@@ -1,23 +1,17 @@
 📘 Pulse Coding Assignment 4 – SaaS Reviews Scraper
 📌 Objective
 
-Develop a Python script to collect SaaS product reviews for a given company
-within a specified time period from multiple review platforms.
+Develop a Python script to collect SaaS product reviews for a given company within a specified time period from multiple review platforms.
 
-The script accepts user input and outputs the reviews in a structured JSON
-format.
+The script accepts user input and outputs the reviews in a structured JSON format.
 
 🛠️ Approach
 
-Direct scraping of platforms like G2 and Capterra is restricted due to
-anti-bot and security mechanisms.
+Direct scraping of platforms such as G2 and Capterra is restricted due to anti-bot and security mechanisms.
 
-To ensure reliability, legality, and consistent results, this project uses
-SerpAPI (Google Search API) to fetch publicly indexed review data related
-to the selected platforms.
+To ensure reliability, legality, and consistent results, this project uses SerpAPI (Google Search API) to retrieve publicly indexed review data related to the selected platforms.
 
-This approach avoids scraping restrictions while still retrieving
-relevant and real-world review information.
+This approach avoids scraping restrictions while still providing relevant, real-world review information.
 
 🌐 Supported Review Sources
 
@@ -27,7 +21,7 @@ Capterra
 
 Trustpilot (Bonus Source)
 
-The script can be easily extended to support additional SaaS review platforms.
+The script is designed to be easily extendable to support additional SaaS review platforms.
 
 📥 Input Parameters
 
@@ -57,10 +51,6 @@ reviewer – Reviewer identifier (platform-based)
 
 rating – Rating (estimated or unavailable)
 
-platform_link – Source page URL
-
-source – Review platform name
-
 📄 Sample Output
 [
   {
@@ -80,7 +70,7 @@ pip install requests python-dateutil
 
 2️⃣ Configure API Key
 
-Set your SerpAPI key in the script:
+Set your SerpAPI key in scraper.py:
 
 SERP_API_KEY = "YOUR_SERPAPI_KEY"
 
@@ -101,5 +91,15 @@ output.json
 
 ⭐ Bonus Feature
 
-A third review source (Trustpilot) has been integrated using the same
-workflow and input format, satisfying the bonus requirement of the assignment.
+A third review source (Trustpilot) has been integrated using the same workflow and input format, fulfilling the bonus requirement of the assignment.
+
+📁 Project Structure
+Pulse_Assignment_4/
+├── scraper.py
+├── output.json
+├── README.md
+├── requirements.txt
+
+
+API keys should not be committed to public repositories.
+
